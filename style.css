@@ -1,11 +1,13 @@
 /* Jerarquía CSS: inline > id > clase > etiqueta */
 
+/* Estilos para el header: */
+
 header {
   background: #bbbbbb;
   padding: 20px;
 }
 
-.contenedor {
+.header__contenedor {
   position: relative;
   width: 940px;
   margin: 0 auto;
@@ -34,6 +36,43 @@ nav a {
 nav a:hover {
   color: #7c5c09;
   font-size: 24px;
+}
+
+/* Estilos para la pagina de home: */
+
+.banner {
+  width: 100%;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+  color: #7c5c09;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 125px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+
+.diferenciales__imagen {
+  width: 60%;
 }
 
 .productos {

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
   <head>
     <meta charset="utf-8" />
@@ -7,10 +6,9 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
-      <div class="contenedor">
+      <div class="header__contenedor">
         <h1>
           <img src="img/logo.png" alt="Logotipo de la Barbería Alura">
         </h1>
@@ -27,35 +25,27 @@
       <form>
         <label for="nombreApellido">Nombre y Apellido:</label>
         <input type="text" id="nombreApellido" class="input-padron" required>
-        
         <label for="correoElectronico">Correo Electrónico:</label>
         <input type="email" id="correoElectronico" class="input-padron" required placeholder="ejemplo@dominio.com">
-        
         <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-        
         <label for="mensaje">Mensaje:</label>
         <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-        
         <fieldset>
           <legend>¿Como le gustaría que lo contactemos?</legend>
-
           <label for="radioCorreoElectronico">
             <input type="radio" name="contacto" value="correo-electronico" id="radioCorreoElectronico" >
             Correo Electrónico
           </label>
-
           <label for="radioTelefono">
             <input type="radio" name="contacto" value="telefono" id="radioTelefono" >
             Teléfono
           </label>
-
           <label for="radioWhatsapp">
             <input type="radio" name="contacto" value="whatsapp" id="radioWhatsapp" checked>
             WhatsApp
           </label>
         </fieldset>
-
         <fieldset class="select-horario">
           <legend>¿En que horario le gustaría ser atendido?</legend>
           <select>
@@ -64,15 +54,12 @@
             <option>Noche</option>
           </select>
         </fieldset>
-
         <label>
           <input type="checkbox" class="checkbox-novedades" checked>
           ¿Le gustaría recibir novedades de la Barbería Alura?
         </label>
-        
         <input type="submit" value="Enviar Formulario" class="enviar">
       </form>
-
       <table>
         <thead>
           <tr>
