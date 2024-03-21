@@ -1,6 +1,15 @@
 /* Jerarquía CSS: inline > id > clase > etiqueta */
 
-/* Estilos para el header: */
+/* Estilos globales */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Estilos para el header */
 
 header {
   background: #bbbbbb;
@@ -42,6 +51,7 @@ nav a:hover {
 
 .banner {
   width: 100%;
+  margin: 0 0 3em;
 }
 
 .titulo-seccion {
@@ -65,14 +75,27 @@ nav a:hover {
 }
 
 .utensilios {
-  width: 125px;
+  width: 155px;
   float: left;
   margin: 0 20px 20px 0;
 }
 
+.ubicacion {
+  padding: 3em 0;
+}
+
+.ubicacion p {
+  margin: 0 0 2em;
+  text-align: center;
+}
 
 .diferenciales__imagen {
   width: 60%;
+}
+
+.video__contenedor {
+  width: 60%;
+  margin: 0 auto 1em auto;
 }
 
 .productos {
