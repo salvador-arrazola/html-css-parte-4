@@ -1,5 +1,24 @@
 /* Jerarquía CSS: inline > id > clase > etiqueta */
 
+/* 
+Selectores avanzados:
+
+padre > hijo { }
+- main > p: Selecciona al primer elemento <p> hijo de <main>.
+
+hermano + hermano { }
+- img + p: Selecciona al elemento <p> que esta después del elemento <img>.
+
+hermano ~ hermanos { }
+- img + p: Selecciona a todos los elementos <p> que están después del elemento <img>.
+
+padre hijos:not(.claseX) o (#idX)  { }
+- main p:not(.mision) Selecciona a todos los elemento <p> que son hijos del elemento <main>, excepto al elemento <p> con la clase .mision.
+
+Estos selectores se pueden combinar entre si:
+- main > p + h2: Selecciona al primer elemento <h2> que es hijo de <main> y esta después de un elemento <p>.
+*/
+
 /* Estilos globales */
 
 body {
@@ -88,7 +107,7 @@ nav a:hover {
 }
 
 .utensilios {
-  width: 170px;
+  width: 17%;
   float: left;
   margin: 0 20px 20px 0;
 }
