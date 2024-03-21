@@ -317,3 +317,25 @@ td, th {
   border: 1px solid #000000;
   padding: 10px 20px;
 }
+
+@media screen and (max-width:480px) {
+  
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .header__contenedor, .principal__contenedor, .ubicacion__mapa, .diferenciales__contenedor, .video__contenedor {
+    width: auto;
+  }
+
+  .diferenciales__lista, .diferenciales__imagen {
+    width: 100%;
+    opacity: 100%;
+  }
+
+
+}
