@@ -47,11 +47,10 @@ nav a:hover {
   font-size: 24px;
 }
 
-/* Estilos para la pagina de home: */
+/* Estilos para la pagina de Home: */
 
 .banner {
   width: 100%;
-  margin: 0 0 3em;
 }
 
 .titulo-seccion {
@@ -59,6 +58,20 @@ nav a:hover {
   font-size: 2em;
   margin: 0 0 1em;
   clear: left;
+}
+
+.titulo-seccion::first-letter {
+  font-weight: bold;
+}
+
+.principal {
+  padding: 2em 0 2em;
+  background: linear-gradient(#ffffff, #dddddd);
+}
+
+.principal__contenedor {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .principal p {
@@ -75,13 +88,14 @@ nav a:hover {
 }
 
 .utensilios {
-  width: 155px;
+  width: 170px;
   float: left;
   margin: 0 20px 20px 0;
 }
 
 .ubicacion {
-  padding: 3em 0;
+  padding: 0 0 2em;
+  background: linear-gradient(#dddddd, #aaaaaa);
 }
 
 .ubicacion p {
@@ -89,14 +103,63 @@ nav a:hover {
   text-align: center;
 }
 
+.ubicacion__mapa {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.diferenciales {
+  padding: 0 0 2em;
+  background: linear-gradient(#aaaaaa, #888888);
+}
+
+.diferenciales__contenedor {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.diferenciales__lista {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Ejemplo del uso de pseudo-clases. */
+/* 
+  .diferenciales__item {
+  line-height: 2;
+}
+
+.diferenciales__item:nth-child(2n-1) {
+  line-height: 1;
+  font-weight: bold;
+}
+*/
+
+.diferenciales__item {
+  margin: 0 0 1em;
+  font-weight: bold;
+}
+
+.diferenciales__item::before {
+  content: "\2727\00A0";
+}
+
 .diferenciales__imagen {
   width: 60%;
 }
 
-.video__contenedor {
-  width: 60%;
-  margin: 0 auto 1em auto;
+.video {
+  background: linear-gradient(#888888, #191C1B);
+  padding: 0 0 2em;
 }
+
+.video__contenedor {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos de la pagina de Productos. */
 
 .productos {
   width: 940px;
@@ -166,10 +229,10 @@ footer {
   margin: 20px;
 }
 
-main {
+/* main {
   width: 940px;
   margin: 0 auto;
-}
+} */
 
 form {
   margin: 40px 0;
