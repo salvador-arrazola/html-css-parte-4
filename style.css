@@ -166,6 +166,13 @@ nav a:hover {
 
 .diferenciales__imagen {
   width: 60%;
+  opacity: 60%;
+  transition: 500ms opacity;
+  box-shadow: 10px 10px 50px 10px #000000;
+}
+
+.diferenciales__imagen:hover {
+  opacity: 100%;
 }
 
 .video {
